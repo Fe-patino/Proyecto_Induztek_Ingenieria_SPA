@@ -15,11 +15,11 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 
 private val EsquemaClaro = lightColorScheme(
-    primary = Primario,
+    primary = VerdeIndustrial,
     onPrimary = Blanco,
-    primaryContainer = PrimarioClaro,
-    onPrimaryContainer = PrimarioOscuro,
-    secondary = Secundario,
+    primaryContainer = VerdeClaro,
+    onPrimaryContainer = VerdeOscuro,
+    secondary = Acero,
     onSecondary = Blanco,
     tertiary = Acento,
     onTertiary = Blanco,
