@@ -14,30 +14,36 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 
+// xxx = color de fondo / onXxx = color del texto que va encima
+
 private val EsquemaClaro = lightColorScheme(
-    primary = VerdeIndustrial,
+    primary = Primario,                 // Botones, barra superior, FAB
     onPrimary = Blanco,
-    primaryContainer = VerdeClaro,
-    onPrimaryContainer = VerdeOscuro,
-    secondary = Acero,
+    primaryContainer = PrimarioClaro,   // Tarjetas de métricas, chip seleccionado
+    onPrimaryContainer = PrimarioOscuro,
+    secondary = Secundario,             // Elementos secundarios
     onSecondary = Blanco,
-    tertiary = Acento,
-    onTertiary = Blanco,
-    background = FondoClaro,
+    tertiary = Acento,                  // Alertas, pendiente de sincronizar
+    onTertiary = TextoOscuro,           // Texto oscuro: el blanco no se lee sobre amarillo
+    error = Error,                      // Errores y mediciones fuera de rango
+    onError = Blanco,
+    background = FondoClaro,            // Fondo de las pantallas
     onBackground = TextoOscuro,
-    surface = SuperficieClara,
+    surface = SuperficieClara,          // Tarjetas, campos, diálogos
     onSurface = TextoOscuro
 )
 
 private val EsquemaOscuro = darkColorScheme(
-    primary = PrimarioClaro,
+    primary = PrimarioModoOscuro,
     onPrimary = PrimarioOscuro,
     primaryContainer = PrimarioOscuro,
     onPrimaryContainer = PrimarioClaro,
-    secondary = Secundario,
-    onSecondary = Blanco,
+    secondary = TextoClaro,
+    onSecondary = FondoOscuro,
     tertiary = Acento,
-    onTertiary = Blanco,
+    onTertiary = TextoOscuro,
+    error = Error,
+    onError = Blanco,
     background = FondoOscuro,
     onBackground = TextoClaro,
     surface = SuperficieOscura,
@@ -45,13 +51,13 @@ private val EsquemaOscuro = darkColorScheme(
 )
 
 private val Formas = Shapes(
-    small = RoundedCornerShape(8.dp),
-    medium = RoundedCornerShape(12.dp),
-    large = RoundedCornerShape(20.dp)
+    small = RoundedCornerShape(8.dp),   // Chips, campos
+    medium = RoundedCornerShape(12.dp), // Tarjetas, botones
+    large = RoundedCornerShape(16.dp)   // Diálogos, hojas inferiores
 )
 
 @Composable
-fun MiRegistroTheme(
+fun ProtoFieldTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
