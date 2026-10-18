@@ -3,25 +3,30 @@ package cl.duocuc.miregistro.ui.theme
 import androidx.compose.ui.unit.dp
 
 object Dimens {
-    val espacioMini = 4.dp
-    val espacioChico = 8.dp
-    val espacioMedio = 16.dp
-    val espacioGrande = 24.dp
-    val espacioPantalla = 20.dp
+    // Espacios (márgenes y separación entre elementos)
+    val espacioMini = 4.dp       // Entre ícono y texto
+    val espacioChico = 8.dp      // Entre chips, entre campo y su error
+    val espacioMedio = 16.dp     // Dentro de tarjetas, entre campos
+    val espacioGrande = 24.dp    // Entre secciones
+    val espacioPantalla = 16.dp  // Margen lateral de las pantallas
 
-    val alturaBoton = 52.dp
-    val radioBoton = 14.dp
-    val bordeBoton = 2.dp
-    val elevacionBoton = 4.dp
+    // Botones (más altos: se usan con guantes en terreno)
+    val alturaBoton = 56.dp
+    val radioBoton = 12.dp
+    val bordeBoton = 1.dp        // Borde del botón secundario (outlined)
+    val elevacionBoton = 2.dp
 
-    val radioCampo = 12.dp
+    // Campos de texto
+    val radioCampo = 8.dp
 
-    val radioTarjeta = 20.dp
-    val elevacionTarjeta = 2.dp
+    // Tarjetas
+    val radioTarjeta = 12.dp     // Igual a Formas.medium
+    val elevacionTarjeta = 1.dp
 
-    val altoBanner = 200.dp
-    val altoPortada = 180.dp
-    val tamanoAvatar = 120.dp
-    val bordeAvatar = 4.dp
-    val tamanoIcono = 20.dp
+    // Encabezados e imágenes
+    val altoBanner = 160.dp      // Encabezado verde del Login
+    val altoPortada = 140.dp     // Encabezado del Perfil
+    val tamanoAvatar = 96.dp     // Foto/iniciales del técnico
+    val bordeAvatar = 3.dp
+    val tamanoIcono = 24.dp
 }
