@@ -20,7 +20,7 @@ object Dimens {
     val radioCampo = 8.dp
 
     // Tarjetas
-    val radioTarjeta = 12.dp     // Igual a Formas.medium
+    val radioTarjeta = 12.dp
     val elevacionTarjeta = 1.dp
 
     // Encabezados e imágenes
