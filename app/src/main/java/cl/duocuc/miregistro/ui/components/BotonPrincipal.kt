@@ -18,7 +18,8 @@ import androidx.compose.ui.unit.dp
 import cl.duocuc.miregistro.R
 import cl.duocuc.miregistro.ui.styles.EstilosBoton
 import cl.duocuc.miregistro.ui.styles.estiloAltoBoton
-import cl.duocuc.miregistro.ui.theme.MiRegistroTheme
+import cl.duocuc.miregistro.ui.theme.ProtoFieldTheme
+
 
 @Composable
 fun BotonPrincipal(
@@ -52,7 +53,7 @@ fun BotonPrincipal(
 @Preview(showBackground = true)
 @Composable
 private fun BotonPrincipalPreview() {
-    MiRegistroTheme {
+    ProtoFieldTheme{
         Column(Modifier.padding(16.dp)) {
             BotonPrincipal(texto = "Registrarme", onClick = {}, modifier = Modifier.fillMaxWidth())
             Spacer(Modifier.size(8.dp))
