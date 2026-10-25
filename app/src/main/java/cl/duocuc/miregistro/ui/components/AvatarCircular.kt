@@ -11,6 +11,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.ImageBitmap
+import androidx.compose.ui.graphics.painter.BitmapPainter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -23,10 +25,12 @@ import cl.duocuc.miregistro.ui.theme.ProtoFieldTheme
 fun AvatarCircular(
     @DrawableRes imagen: Int,
     descripcion: String,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+
+    foto: ImageBitmap? = null
 ) {
     Image(
-        painter = painterResource(id = imagen),
+        painter = if (foto != null) BitmapPainter(foto) else painterResource(id = imagen),
         contentDescription = descripcion,
         contentScale = ContentScale.Crop,
         modifier = modifier
