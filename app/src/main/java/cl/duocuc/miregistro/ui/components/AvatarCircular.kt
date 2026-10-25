@@ -17,7 +17,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import cl.duocuc.miregistro.R
 import cl.duocuc.miregistro.ui.theme.Dimens
-import cl.duocuc.miregistro.ui.theme.MiRegistroTheme
+import cl.duocuc.miregistro.ui.theme.ProtoFieldTheme
 
 @Composable
 fun AvatarCircular(
@@ -40,7 +40,7 @@ fun AvatarCircular(
 @Preview(showBackground = true)
 @Composable
 private fun AvatarCircularPreview() {
-    MiRegistroTheme {
+    ProtoFieldTheme {
         AvatarCircular(imagen = R.drawable.avatar_usuario, descripcion = "", modifier = Modifier.padding(16.dp))
     }
 }
