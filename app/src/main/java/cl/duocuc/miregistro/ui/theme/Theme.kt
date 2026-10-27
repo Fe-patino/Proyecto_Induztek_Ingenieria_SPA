@@ -1,17 +1,12 @@
 package cl.duocuc.miregistro.ui.theme
 
-import android.app.Activity
-import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Shapes
 import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.dynamicDarkColorScheme
-import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 
 // xxx = color de fondo / onXxx = color del texto que va encima
@@ -30,7 +25,16 @@ private val EsquemaClaro = lightColorScheme(
     background = FondoClaro,            // Fondo de las pantallas
     onBackground = TextoOscuro,
     surface = SuperficieClara,          // Tarjetas, campos, diálogos
-    onSurface = TextoOscuro
+    onSurface = TextoOscuro,
+    // Menús desplegables, diálogos y barras: sin esto Material 3 usa su lila por defecto
+    surfaceContainerLowest = SuperficieClara,
+    surfaceContainerLow = SuperficieClara,
+    surfaceContainer = SuperficieClara,
+    surfaceContainerHigh = SuperficieClara,
+    surfaceContainerHighest = SuperficieClara,
+    surfaceVariant = FondoClaro,
+    secondaryContainer = PrimarioClaro,
+    onSecondaryContainer = PrimarioOscuro
 )
 
 private val EsquemaOscuro = darkColorScheme(
@@ -47,7 +51,12 @@ private val EsquemaOscuro = darkColorScheme(
     background = FondoOscuro,
     onBackground = TextoClaro,
     surface = SuperficieOscura,
-    onSurface = TextoClaro
+    onSurface = TextoClaro,
+    surfaceContainerLowest = SuperficieOscura,
+    surfaceContainerLow = SuperficieOscura,
+    surfaceContainer = SuperficieOscura,
+    surfaceContainerHigh = SuperficieOscura,
+    surfaceContainerHighest = SuperficieOscura
 )
 
 private val Formas = Shapes(
