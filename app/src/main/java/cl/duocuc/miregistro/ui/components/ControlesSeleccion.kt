@@ -20,7 +20,8 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import cl.duocuc.miregistro.ui.theme.Dimens
-import cl.duocuc.miregistro.ui.theme.MiRegistroTheme
+import cl.duocuc.miregistro.ui.theme.ProtoFieldTheme
+
 
 @Composable
 fun CasillaConTexto(
@@ -100,7 +101,7 @@ fun <T> GrupoRadio(
 @Preview(showBackground = true)
 @Composable
 private fun ControlesSeleccionPreview() {
-    MiRegistroTheme {
+    ProtoFieldTheme {
         Column(Modifier.padding(16.dp)) {
             CasillaConTexto(texto = "Acepto los términos", marcado = true, onCambio = {})
             InterruptorConTexto(texto = "Recibir novedades", activado = false, onCambio = {})
