@@ -8,23 +8,7 @@ import android.net.Uri
 import android.os.Build
 import java.io.ByteArrayOutputStream
 
-// =====================================================================
-//  NUEVO (Avatar) — ConvertidorImagen.kt
-//  ---------------------------------------------------------------------
-//  Una imagen pasa por 3 formas distintas en esta app:
-//
-//   Cámara ──▶ Bitmap ─┐
-//                       ├─▶ ByteArray (JPEG) ──▶ columna BLOB de SQLite
-//   Galería ─▶ Uri ────┘          │
-//                                  └─▶ Bitmap ──▶ Image en el Perfil
-//
-//   Uri       = "dirección" de un archivo que pertenece a OTRA app (la galería).
-//   Bitmap    = la imagen en memoria, pixel por pixel (pesada).
-//   ByteArray = la imagen comprimida en JPEG (liviana): es lo que se guarda.
-//
-//  "object" = una sola instancia para toda la app (como una clase con métodos
-//  estáticos en Java). Se usa así: ConvertidorImagen.aBytes(foto)
-// =====================================================================
+
 
 object ConvertidorImagen {
 
