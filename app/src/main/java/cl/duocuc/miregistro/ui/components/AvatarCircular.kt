@@ -26,7 +26,8 @@ fun AvatarCircular(
     @DrawableRes imagen: Int,
     descripcion: String,
     modifier: Modifier = Modifier,
-
+    // NUEVO (Avatar): foto del usuario leída de la BD. Si es null se dibuja la imagen por
+    // defecto (imagen); así los usos y @Preview anteriores no cambian.
     foto: ImageBitmap? = null
 ) {
     Image(
