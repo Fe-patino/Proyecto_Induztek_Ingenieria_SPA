@@ -3,6 +3,7 @@ package cl.duocuc.miregistro.ui.components
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Card
@@ -10,11 +11,13 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import cl.duocuc.miregistro.ui.styles.EstilosTarjeta
 import cl.duocuc.miregistro.ui.theme.Dimens
-import cl.duocuc.miregistro.ui.theme.MiRegistroTheme
+import cl.duocuc.miregistro.ui.theme.ProtoFieldTheme
+
 
 @Composable
 fun TarjetaSeccion(
@@ -42,12 +45,34 @@ fun TarjetaSeccion(
     }
 }
 
+
+@Composable
+fun LineaDato(
+    etiqueta: String,
+    valor: String,
+    modifier: Modifier = Modifier,
+    colorValor: Color? = null
+) {
+    Row(
+        modifier = modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceBetween
+    ) {
+        Text(text = etiqueta, style = MaterialTheme.typography.bodyMedium)
+        Text(
+            text = valor,
+            style = MaterialTheme.typography.bodyMedium,
+            color = colorValor ?: MaterialTheme.colorScheme.primary
+        )
+    }
+}
+
 @Preview(showBackground = true)
 @Composable
 private fun TarjetaSeccionPreview() {
-    MiRegistroTheme {
-        TarjetaSeccion(titulo = "Sobre mí", modifier = Modifier.padding(16.dp)) {
+    ProtoFieldTheme {
+        TarjetaSeccion(titulo = "Equipo", modifier = Modifier.padding(16.dp)) {
             Text("Cualquier contenido puede ir aquí dentro.")
+            LineaDato(etiqueta = "Código", valor = "TR-001")
         }
     }
 }

@@ -17,7 +17,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import cl.duocuc.miregistro.ui.styles.EstilosTarjeta
 import cl.duocuc.miregistro.ui.theme.Dimens
-import cl.duocuc.miregistro.ui.theme.MiRegistroTheme
+import cl.duocuc.miregistro.ui.theme.ProtoFieldTheme
+
 
 @Composable
 fun TarjetaEstadistica(
@@ -54,7 +55,7 @@ fun TarjetaEstadistica(
 @Preview(showBackground = true)
 @Composable
 private fun TarjetaEstadisticaPreview() {
-    MiRegistroTheme {
+    ProtoFieldTheme {
         Row(Modifier.padding(16.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             TarjetaEstadistica("128", "Seguidores", Modifier.weight(1f))
             TarjetaEstadistica("96", "Siguiendo", Modifier.weight(1f))

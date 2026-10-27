@@ -23,7 +23,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import cl.duocuc.miregistro.R
 import cl.duocuc.miregistro.ui.theme.Blanco
 import cl.duocuc.miregistro.ui.theme.Dimens
-import cl.duocuc.miregistro.ui.theme.MiRegistroTheme
+import cl.duocuc.miregistro.ui.theme.ProtoFieldTheme
+
 
 @Composable
 fun ImagenEncabezado(
@@ -67,7 +68,7 @@ fun ImagenEncabezado(
 @Preview(showBackground = true)
 @Composable
 private fun ImagenEncabezadoPreview() {
-    MiRegistroTheme {
+    ProtoFieldTheme {
         ImagenEncabezado(
             imagen = R.drawable.banner_registro,
             descripcion = "",
