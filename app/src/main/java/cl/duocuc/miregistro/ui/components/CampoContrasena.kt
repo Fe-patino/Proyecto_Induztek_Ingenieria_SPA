@@ -20,7 +20,8 @@ import androidx.compose.ui.unit.dp
 import cl.duocuc.miregistro.R
 import cl.duocuc.miregistro.ui.styles.EstilosCampo
 import cl.duocuc.miregistro.ui.theme.Dimens
-import cl.duocuc.miregistro.ui.theme.MiRegistroTheme
+import cl.duocuc.miregistro.ui.theme.ProtoFieldTheme
+
 
 @Composable
 fun CampoContrasena(
@@ -70,7 +71,7 @@ fun CampoContrasena(
 @Preview(showBackground = true)
 @Composable
 private fun CampoContrasenaPreview() {
-    MiRegistroTheme {
+    ProtoFieldTheme {
         CampoContrasena(
             valor = "secreto",
             onValorCambia = {},
