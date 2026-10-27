@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MiRegistro</string>
+    <string name="app_name">ProtoField</string>
 
     <string name="titulo_formulario">Crear cuenta</string>
     <string name="banner_titulo">Únete a la comunidad</string>
@@ -32,7 +32,7 @@
     <string name="titulo_editar">Editar usuario</string>
     <string name="menu_cerrar_sesion">Cerrar sesión</string>
     <string name="dialogo_titulo">¿Cerrar sesión?</string>
-    <string name="dialogo_mensaje">Tendrás que registrarte de nuevo para ver tu perfil.</string>
+    <string name="dialogo_mensaje">Tendrás que iniciar sesión de nuevo para usar ProtoField.</string>
     <string name="dialogo_cancelar">Cancelar</string>
     <string name="snackbar_sesion_cerrada">Sesión cerrada</string>
 
@@ -57,4 +57,103 @@
     <string name="dialogo_eliminar_titulo">¿Eliminar usuario?</string>
     <string name="dialogo_eliminar_mensaje">Se eliminará a %1$s de la base de datos.</string>
     <string name="btn_eliminar">Eliminar</string>
+
+    <!-- NUEVO (Login): pantalla de ingreso -->
+    <string name="login_subtitulo">Registro de pruebas eléctricas en terreno</string>
+    <string name="login_seccion">Ingresa a tu cuenta</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="error_correo_obligatorio">Ingresa tu correo</string>
+    <string name="error_correo_invalido">Ingresa un correo válido</string>
+    <string name="error_contrasena_obligatoria">Ingresa tu contraseña</string>
+    <string name="error_credenciales">Correo o contraseña incorrectos</string>
+
+    <!-- NUEVO (Inicio): dashboard -->
+    <string name="inicio_rol">Rol: %1$s</string>
+    <string name="estadistica_total">Protocolos</string>
+    <string name="estadistica_en_terreno">En terreno</string>
+    <string name="estadistica_formalizados">Formalizados</string>
+    <string name="estadistica_fuera_de_rango">Fuera de rango</string>
+    <string name="campo_buscar_codigo">Buscar por código de equipo</string>
+    <string name="campo_filtro_estado">Estado</string>
+    <string name="filtro_todos">Todos</string>
+    <string name="filtro_en_terreno">En terreno</string>
+    <string name="filtro_formalizados">Formalizados</string>
+    <string name="btn_nuevo_protocolo">Nuevo protocolo</string>
+    <string name="lista_titulo_tecnico">Mis protocolos</string>
+    <string name="lista_titulo_supervisor">Todos los protocolos</string>
+    <string name="lista_vacia_protocolos">No se encontraron protocolos</string>
+    <string name="protocolo_tecnico">Técnico: %1$s</string>
+    <string name="protocolo_fuera_de_rango">Mediciones fuera de rango: %1$d</string>
+
+    <!-- NUEVO (Nuevo protocolo): formulario de 3 pasos -->
+    <string name="titulo_nuevo_protocolo">Nuevo protocolo</string>
+    <string name="paso_indicador">Paso %1$d de %2$d</string>
+    <string name="paso_1_titulo">Equipo e instalación</string>
+    <string name="paso_2_titulo">Mediciones</string>
+    <string name="paso_3_titulo">Resultado y cierre</string>
+    <string name="campo_equipo">Equipo</string>
+    <string name="seccion_instalacion">Instalación del cliente</string>
+    <string name="dato_tipo">Tipo</string>
+    <string name="dato_marca">Marca</string>
+    <string name="dato_cliente">Cliente</string>
+    <string name="dato_planta">Planta</string>
+    <string name="dato_ciudad">Ciudad</string>
+    <string name="dato_equipo">Equipo</string>
+    <string name="medicion_rango">Rango: %1$s – %2$s %3$s</string>
+    <string name="medicion_fuera_de_rango">Fuera de rango (%1$s – %2$s %3$s)</string>
+    <string name="resultado_aprobado">Aprobado</string>
+    <string name="resultado_rechazado">Rechazado</string>
+    <string name="aviso_aprobado_fuera_de_rango">Hay mediciones fuera de rango: revisa si el resultado debe ser Rechazado</string>
+    <string name="campo_observaciones">Observaciones</string>
+    <string name="seccion_resumen">Resumen</string>
+    <string name="resumen_fecha_automatica">La fecha y hora se registran automáticamente al guardar.</string>
+    <string name="btn_anterior">Anterior</string>
+    <string name="btn_siguiente">Siguiente</string>
+    <string name="btn_guardar_protocolo">Guardar protocolo</string>
+    <string name="error_equipo_obligatorio">Elige un equipo</string>
+    <string name="error_medicion_obligatoria">Ingresa el valor medido</string>
+    <string name="error_medicion_invalida">Ingresa un número válido</string>
+
+    <!-- NUEVO (Detalle): comprobante del protocolo -->
+    <string name="titulo_detalle">Comprobante de protocolo</string>
+    <string name="detalle_numero">Protocolo N° %1$d</string>
+    <string name="dato_estado">Estado</string>
+    <string name="dato_fecha">Fecha y hora</string>
+    <string name="dato_tecnico">Técnico</string>
+    <string name="dato_resultado">Resultado</string>
+    <string name="seccion_equipo">Equipo e instalación</string>
+    <string name="seccion_mediciones">Mediciones</string>
+    <string name="col_parametro">Parámetro</string>
+    <string name="col_valor">Valor</string>
+    <string name="col_rango">Rango</string>
+    <string name="medicion_etiqueta_fuera">Fuera de rango</string>
+    <string name="sin_observaciones">Sin observaciones</string>
+    <string name="btn_formalizar">Formalizar</string>
+    <string name="btn_ver_historial">Ver historial del equipo</string>
+    <string name="aviso_solo_lectura">Protocolo formalizado: solo lectura.</string>
+    <string name="dialogo_formalizar_titulo">¿Formalizar protocolo?</string>
+    <string name="dialogo_formalizar_mensaje">El protocolo del equipo %1$s pasará a Formalizado y ya no se podrá modificar.</string>
+
+    <!-- NUEVO (Historial): pruebas de un equipo y comparación con la anterior -->
+    <string name="titulo_historial">Historial del equipo</string>
+    <string name="historial_pruebas">Pruebas (de la más reciente a la más antigua)</string>
+    <string name="historial_vacio">Este equipo aún no tiene pruebas registradas</string>
+    <string name="diferencia_sube">▲ +%1$s %2$s respecto a la prueba anterior</string>
+    <string name="diferencia_baja">▼ -%1$s %2$s respecto a la prueba anterior</string>
+    <string name="diferencia_igual">Sin cambios respecto a la prueba anterior</string>
+    <string name="diferencia_primera">Primera prueba registrada</string>
+    <string name="medicion_salio_de_rango">Salió del rango aceptable</string>
+
+    <!-- NUEVO (Perfil): estadísticas del técnico -->
+    <string name="perfil_realizados">Realizados</string>
+
+    <!-- NUEVO (Cámara / Galería): botones para cambiar el avatar -->
+    <string name="btn_camara">Cámara</string>
+    <string name="btn_galeria">Galería</string>
+    <string name="texto_cambiar_foto">Cambia tu foto de perfil</string>
+
+    <!-- NUEVO (Permisos): mensajes cuando el usuario rechaza un permiso -->
+    <string name="permiso_camara_denegado">Sin permiso de cámara no se puede tomar la foto</string>
+    <string name="permiso_galeria_denegado">Sin permiso de fotos no se puede leer la galería</string>
+    <string name="btn_ajustes">Ajustes</string>
 </resources>
